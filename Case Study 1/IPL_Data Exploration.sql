@@ -119,9 +119,9 @@ WHERE Price_in_cr > (
 SELECT Player, Team, Role, Price_in_cr
 FROM IPLPlayers p
 WHERE Price_in_cr = (
-						SELECT MAX(Price_in_cr) 
-						FROM IPLPlayers
-						WHERE Role = p.Role
+			SELECT MAX(Price_in_cr) 
+			FROM IPLPlayers
+			WHERE Role = p.Role
 					)
 
 
